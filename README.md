@@ -6,7 +6,7 @@ The approach followed is quit similar to the one of Denny and the original paper
 The implemented [model](cnn_model.py) has multiple convolutional layers in parallel to obtain several features of one text. Through different kernel sizes of each convolution layer the window size varies and the text will be read with a n-gram approach. The default values are 3 convolution layers with kernel size of 3, 4 and 5.<br>
 
 ## Results
-For all runs I used a learning rate reduction if their's no improvement on validation loss by factor 0.1 after 4 epochs. The optimizer for all runs was Adadelta.<br>As already described I used 5 runs to get a final mean of loss / accuracy.
+
  can get better results by tuning some parameters:
 - Increase feature maps
 - Add / remove filter sizes
